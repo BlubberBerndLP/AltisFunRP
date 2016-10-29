@@ -21,10 +21,12 @@ class RscTitles {
     #include "dialog\hud_nameTags.hpp"
     #include "dialog\hud_stats.hpp"
 	#include "dialog\uiPerso.hpp"
+	#include "maverick\tuning\dialogs\titles.hpp"
 };
 
 class CfgFunctions {
     #include "Functions.hpp"
+	#include "maverick\maverick_functions_master.cpp"
 };
 
 class CfgSounds {
@@ -222,3 +224,5 @@ class CfgNotifications {
         priority = 5;
     };
 };
+
+#include "maverick\maverick_master.cpp"
