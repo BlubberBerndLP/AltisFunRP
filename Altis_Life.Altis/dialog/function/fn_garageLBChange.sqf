@@ -83,7 +83,7 @@ if (_trunkSpace isEqualTo -1) then {"None"} else {_trunkSpace},
 (_vehicleInfo select 12),
 _vehicleColor,
 [_insurancePrice] call life_fnc_numberText,
-if(_insurance == 1) then {"<t color='#8cff9b'>Assuré</t>"} else {"<t color='#FF0000'>Pas d'assurance</t>"},
+if(_insurance == 1) then {"<t color='#8cff9b'>Versichern</t>"} else {"<t color='#FF0000'>Keine Versicherung</t>"},
 (_vehicleInfo select 9)
 ];
 if(_insurance == 1) then {
