@@ -15,6 +15,14 @@ class Licenses {
         illegal = false;
         side = "civ";
     };
+	
+	class einbuergerung {
+        variable = "einbuergerung";
+        displayName = "STR_License_ausweis";
+        price = 2500;
+        illegal = false;
+        side = "civ";
+    };
 
     class boat {
         variable = "boat";

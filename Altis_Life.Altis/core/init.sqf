@@ -62,6 +62,17 @@ if (_extDB_notLoaded isEqualType []) exitWith {
 
 [] call SOCK_fnc_dataQuery;
 waitUntil {life_session_completed};
+
+diag_log "::Client:: Pruefe Personalausweisdaten."; // Checking identity card
+0 cutText ["Ueberpruefe Daten des Personalausweises...","BLACK FADED"]; // Checking identity card
+[] call fvs_fnc_perso_laden;
+0 cutFadeOut 99999999;
+waitUntil{fvs_persoReady};
+
+0 cutText["Vorbereitung wird abgeschlossen","BLACK FADED"]; // complete
+0 cutFadeOut 9999999;
+
+[] spawn life_fnc_escInterupt;
 0 cutText[localize "STR_Init_ClientFinish","BLACK FADED"];
 0 cutFadeOut 9999999;
 
