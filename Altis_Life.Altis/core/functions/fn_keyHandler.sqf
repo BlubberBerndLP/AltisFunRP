@@ -211,6 +211,37 @@ switch (_code) do {
             };
         };
     };
+	
+	    // Some movement and gesture shit
+        if( (_shift || _ctrlKey) && _code in [0x52, 0x4F, 0x50, 0x51, 0x4B, 0x4C, 0x4D, 0x47, 0x48, 0x49] && _vehicle isEqualTo player ) then {
+            if( time - XY_cooldown > 2 ) then {
+                XY_cooldown = time;
+                if( _shift ) then {
+                    player playMove (switch(_code) do {
+                        case(0x52): { "AmovPercMstpSnonWnonDnon_exercisekneeBendA" };
+                        case(0x4F): { "AmovPercMstpSnonWnonDnon_exercisekneeBendB" };
+                        case(0x50): { "AmovPercMstpSnonWnonDnon_exercisePushup" };
+                        case(0x51): { "AmovPercMstpSnonWnonDnon_exerciseKata" };
+                        case(0x4B): { "AmovPercMstpSnonWnonDnon_Scared" };
+                        case(0x4C): { "Acts_AidlPercMstpSlowWrflDnon_pissing" };
+                    });
+                };
+                if( _ctrlKey ) then {
+                    player playAction (switch(_code) do {
+                        case(0x52): { "GestureNo" };
+                        case(0x4F): { "GestureNod" };
+                        case(0x50): { "GestureGo" };
+                        case(0x51): { "GestureCover" };
+                        case(0x4B): { "GestureCeaseFire" };
+                        case(0x4C): { "GestureFollow" };
+                        case(0x4D): { "GestureUp" };
+                        case(0x47): { "GestureAdvance" };
+                        case(0x48): { "GesturePoint" };
+                    });
+                };
+            };
+            _handled = true;
+        };
 
     //O Key
     case 24: {
