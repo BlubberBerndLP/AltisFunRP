@@ -29,3 +29,4 @@
 #include "FuelStat.hpp"
 #include "newsStation.hpp"
 #include "personalausweis.hpp"
+#include "smartphone.hpp"

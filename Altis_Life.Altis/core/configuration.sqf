@@ -89,6 +89,7 @@ fvs_namenInfo = false;
 fvs_checking_a = false;
 fvs_namen_a = false;
 fvs_hakendaten = false;
+life_smartphoneTarget = ObjNull;
 
 life_istazed = false;
 life_isknocked = false;

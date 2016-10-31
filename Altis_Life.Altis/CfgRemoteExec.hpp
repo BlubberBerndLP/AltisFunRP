@@ -84,6 +84,8 @@ class CfgRemoteExec {
 
         /* Server only functions */
         F(BIS_fnc_execVM,SERVER)
+		F(TON_fnc_handleMessages,SERVER)
+        F(TON_fnc_msgRequest,SERVER)
         F(DB_fnc_insertRequest,SERVER)
         F(DB_fnc_queryRequest,SERVER)
         F(DB_fnc_updatePartial,SERVER)

@@ -126,7 +126,7 @@ class Life_RscHud
     text = "";
 };
 
-class Life_RscListNBox
+class Life_RscListNBox 
 {
     style = 16;
     type = 102;
@@ -143,7 +143,7 @@ class Life_RscListNBox
     colorSelectBackground2[] = {1,1,1,0.5};
     colorPicture[] = {1,1,1,1};
     colorPictureSelected[] = {1,1,1,1};
-        colorPictureDisabled[] = {1,1,1,1};
+    colorPictureDisabled[] = {1,1,1,1};
     soundSelect[] = {"",0.1,1};
     soundExpand[] = {"",0.1,1};
     soundCollapse[] = {"",0.1,1};
@@ -152,6 +152,10 @@ class Life_RscListNBox
     autoScrollSpeed = -1;
     autoScrollDelay = 5;
     autoScrollRewind = 0;
+    rowHeight = 0.04;
+    drawSideArrows = 0;
+    idcLeft = -1;
+    idcRight = -1;
     class ListScrollBar: Life_RscScrollBar{};
     class ScrollBar: Life_RscScrollBar{};
 };
