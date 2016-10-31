@@ -211,37 +211,6 @@ switch (_code) do {
             };
         };
     };
-	
-	    // Some movement and gesture shit
-        if( (_shift || _ctrlKey) && _code in [0x52, 0x4F, 0x50, 0x51, 0x4B, 0x4C, 0x4D, 0x47, 0x48, 0x49] && _vehicle isEqualTo player ) then {
-            if( time - XY_cooldown > 2 ) then {
-                XY_cooldown = time;
-                if( _shift ) then {
-                    player playMove (switch(_code) do {
-                        case(0x52): { "AmovPercMstpSnonWnonDnon_exercisekneeBendA" };
-                        case(0x4F): { "AmovPercMstpSnonWnonDnon_exercisekneeBendB" };
-                        case(0x50): { "AmovPercMstpSnonWnonDnon_exercisePushup" };
-                        case(0x51): { "AmovPercMstpSnonWnonDnon_exerciseKata" };
-                        case(0x4B): { "AmovPercMstpSnonWnonDnon_Scared" };
-                        case(0x4C): { "Acts_AidlPercMstpSlowWrflDnon_pissing" };
-                    });
-                };
-                if( _ctrlKey ) then {
-                    player playAction (switch(_code) do {
-                        case(0x52): { "GestureNo" };
-                        case(0x4F): { "GestureNod" };
-                        case(0x50): { "GestureGo" };
-                        case(0x51): { "GestureCover" };
-                        case(0x4B): { "GestureCeaseFire" };
-                        case(0x4C): { "GestureFollow" };
-                        case(0x4D): { "GestureUp" };
-                        case(0x47): { "GestureAdvance" };
-                        case(0x48): { "GesturePoint" };
-                    });
-                };
-            };
-            _handled = true;
-        };
 
     //O Key
     case 24: {
@@ -390,6 +359,47 @@ switch (_code) do {
             };
         };
     };
+};
+
+//Takwondo(Traditional Martial arts in korea)(Shift + Num 1)
+case 79:
+{
+ if(_shift) then {_handled = true;};
+ if ((_shift) && (vehicle player == player)) then
+ {
+ cutText [format["Takwondo!!!"], "PLAIN DOWN"];
+ player playMove "GestureNo";
+ };
+};
+//Kneebend Slow(Shift + Num 2)
+case 80:
+{
+ if(_shift) then {_handled = true;};
+ if ((_shift) && (vehicle player == player)) then
+ {
+ cutText [format["KneeBend Slow baby~"], "PLAIN DOWN"];
+ player playMove "GestureNod";
+ };
+};
+//Kneebend Fast(Shift + Num 3)
+case 81:
+{
+ if(_shift) then {_handled = true;};
+ if ((_shift) && (vehicle player == player)) then
+ {
+ cutText [format["KneeBend more Hard!!!Move!!Move!!"], "PLAIN DOWN"];
+ player playMove "GestureGo";
+ };
+};
+//Pushup(Shift + Num 4)
+case 75:
+{
+ if(_shift) then {_handled = true;};
+ if ((_shift) && (vehicle player == player)) then
+ {
+ cutText [format["Pushup!!!!!!"], "PLAIN DOWN"];
+ player playMove "GestureCover";
+ };
 };
 
 _handled;
