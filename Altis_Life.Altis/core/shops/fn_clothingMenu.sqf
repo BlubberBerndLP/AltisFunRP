@@ -2,7 +2,6 @@
 /*
     File: fn_clothingMenu.sqf
     Author: Bryan "Tonic" Boardwine
-
     Description:
     Opens and initializes the clothing store menu.
     Started clean, finished messy.
@@ -18,7 +17,7 @@ if !(isClass(missionConfigFile >> "Clothing" >> _shop)) exitWith {}; //Bad confi
 
 private _shopTitle = M_CONFIG(getText,"Clothing",_shop,"title");
 private _shopSide = M_CONFIG(getText,"Clothing",_shop,"side");
-private _conditions = M_CONFIG(getText,"Clothing",_shop,"condition");
+private _conditions = M_CONFIG(getText,"Clothing",_shop,"conditions");
 
 private _exit = false;
 
