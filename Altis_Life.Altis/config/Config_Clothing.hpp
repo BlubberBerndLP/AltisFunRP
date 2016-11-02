@@ -138,16 +138,20 @@ class Clothing {
             { "NONE", "Remove Uniform", 0, "" },
             { "U_Rangemaster", "Cop Uniform", 25, "" },
             { "U_B_CombatUniform_mcam_tshirt", "", 350, "call life_coplevel >= 1" },
+			{ "U_B_survival_uniform", "", 1250, "call life_coplevel >= 1" },
             { "U_B_CombatUniform_mcam_worn", "", 550, "call life_coplevel >= 2" },
-            { "U_B_survival_uniform", "", 1250, "call life_coplevel >= 1" }
+			{ "U_B_GEN_Soldier_F", "", 750, "call life_coplevel >= 3" },
+			{ "U_B_GEN_Commander_F", "", 750, "call life_coplevel >= 5" }
         };
         headgear[] = {
             { "NONE", "Remove Hat", 0, "" },
             { "H_Cap_police", "", 25, "" },
-            { "H_Beret_blk_POLICE", "", 50, "call life_coplevel >= 2" },
+            { "H_Booniehat_mcamo", "", 120, "call life_coplevel >= 1" },
             { "H_HelmetB_plain_mcamo", "", 75, "call life_coplevel >= 1" },
             { "H_MilCap_mcamo", "", 100, "call life_coplevel >= 2" },
-            { "H_Booniehat_mcamo", "", 120, "call life_coplevel >= 1" }
+			{ "H_Beret_blk_POLICE", "", 50, "call life_coplevel >= 2" },
+            { "H_MilCap_gen_F", "", 50, "call life_coplevel >= 3" },
+			{ "H_Beret_gen_F", "", 50, "call life_coplevel >= 5" }
         };
         goggles[] = {
             { "NONE", "Remove Glasses", 0, "" },
@@ -169,8 +173,12 @@ class Clothing {
             { "NONE", "Remove Vest", 0, "" },
             { "V_Rangemaster_belt", "", 800, "" },
             { "V_TacVest_blk_POLICE", "", 1000, "call life_coplevel >= 1" },
-            { "V_PlateCarrier2_rgr", "", 1500, "call life_coplevel >= 2" },
-            { "V_TacChestrig_grn_F", "", 1500, "call life_coplevel >= 2" }
+			{ "V_TacVest_gen_F", "", 1000, "call life_coplevel >= 1" },
+            { "V_TacVest_blk", "", 1500, "call life_coplevel >= 2" },
+			{ "V_PlateCarrier2_rgr", "", 1500, "call life_coplevel >= 2" },
+            { "V_TacChestrig_grn_F", "", 1500, "call life_coplevel >= 2" },
+			{ "V_PlateCarrierGL_blk", "", 1500, "call life_coplevel >= 4" },
+			{ "V_PlateCarrierSpec_blk", "", 1500, "call life_coplevel >= 5" }
         };
         backpacks[] = {
             { "NONE", "Remove Backpack", 0, "" },
@@ -293,7 +301,26 @@ class Clothing {
             { "U_I_C_Soldier_Bandit_3_F", "", 50032, "" }, //Apex DLC
             { "U_I_C_Soldier_Bandit_4_F", "", 50020, "" }, //Apex DLC
             { "U_I_C_Soldier_Bandit_5_F", "", 50020, "" }, //Apex DLC
-            { "U_I_C_Soldier_Camo_F", "", 52000, "" } //Apex DLC
+            { "U_I_C_Soldier_Camo_F", "", 52000, "" }, //Apex DLC
+			{ "U_B_T_Soldier_AR_F", "", 50000, "" }, //Apex DLC
+	        { "U_B_T_Soldier_SL_F", "", 50000, "" }, //Apex DLC
+	        { "U_B_T_Sniper_F", "", 50000, "" }, //Apex DLC
+	        { "U_B_T_FullGhillie_tna_F", "", 50000, "" }, //Apex DLC
+	        { "U_B_CTRG_Soldier_F", "", 50000, "" }, //Apex DLC
+	        { "U_B_CTRG_Soldier_2_F", "", 50000, "" }, //Apex DLC
+	        { "U_B_CTRG_Soldier_3_F", "", 50000, "" }, //Apex DLC
+	        { "U_O_T_Soldier_F", "", 50000, "" }, //Apex DLC
+	        { "U_O_T_Officer_F", "", 50000, "" }, //Apex DLC
+	        { "U_O_T_Sniper_F", "", 50000, "" }, //Apex DLC
+	        { "U_O_T_FullGhillie_tna_F", "", 50000, "" }, //Apex DLC
+	        { "U_I_C_Soldier_Para_1_F", "", 50000, "" }, //Apex DLC
+	        { "U_I_C_Soldier_Para_2_F", "", 50000, "" }, //Apex DLC
+	        { "U_I_C_Soldier_Para_3_F", "", 50000, "" }, //Apex DLC
+	        { "U_I_C_Soldier_Para_4_F", "", 50000, "" }, //Apex DLC
+	        { "U_I_C_Soldier_Para_5_F", "", 50000, "" }, //Apex DLC
+	        { "U_B_CTRG_Soldier_urb_1_F", "", 50000, "" }, //Apex DLC
+	        { "U_B_CTRG_Soldier_urb_2_F", "", 50000, "" }, //Apex DLC
+	        { "U_B_CTRG_Soldier_urb_3_F", "", 50000, "" } //Apex DLC
         };
         headgear[] = {
             { "NONE", "Remove Hat", 0, "" },
@@ -305,7 +332,15 @@ class Clothing {
             { "H_MilCap_gen_F", "", 1200, "" }, //Apex DLC
             { "H_MilCap_tna_F", "", 1200, "" }, //Apex DLC
             { "H_HelmetO_ocamo", "", 2500, "" },
-            { "H_HelmetB_Enh_tna_F", "", 8000, "" } //Apex DLC
+            { "H_HelmetB_Enh_tna_F", "", 8000, "" }, //Apex DLC
+			{ "H_HelmetB_TI_tna_F", "", 8000, "" }, //Apex DLC
+	        { "H_HelmetB_tna_F", "", 8000, "" }, //Apex DLC
+	        { "H_HelmetB_Light_tna_F", "", 8000, "" }, //Apex DLC
+	        { "H_HelmetSpecO_ghex_F", "", 8000, "" }, //Apex DLC
+	        { "H_HelmetLeaderO_ghex_F", "", 8000, "" }, //Apex DLC
+	        { "H_HelmetO_ghex_F", "", 8000, "" }, //Apex DLC
+	        { "H_HelmetCrew_O_ghex_F", "", 8000, "" }, //Apex DLC
+	        { "H_Booniehat_tna_F", "", 8000, "" } //Apex DLC
         };
         goggles[] = {
             { "NONE", "Remove Glasses", 0, "" },
@@ -336,7 +371,15 @@ class Clothing {
             { "V_BandollierB_cbr", "", 4500, "" },
             { "V_HarnessO_brn", "", 7500, "" },
             { "V_TacVest_khk", "", 12500, "" },
-            { "V_TacVest_gen_F", "", 14500, "" }
+            { "V_PlateCarrier1_tna_F", "", 15000, "" }, //Apex DLC
+	        { "V_PlateCarrier2_tna_F", "", 15000, "" }, //Apex DLC
+	        { "V_PlateCarrierSpec_tna_F", "", 15000, "" }, //Apex DLC
+	        { "V_PlateCarrierGL_tna_F", "", 15000, "" }, //Apex DLC
+	        { "V_HarnessO_ghex_F", "", 15000, "" }, //Apex DLC
+	        { "V_HarnessOGL_ghex_F", "", 15000, "" }, //Apex DLC
+	        { "V_BandollierB_ghex_F", "", 15000, "" }, //Apex DLC
+	        { "V_PlateCarrier1_rgr_noflag_F", "", 15000, "" }, //Apex DLC
+	        { "V_PlateCarrier2_rgr_noflag_F", "", 15000, "" } //Apex DLC
 
         };
         backpacks[] = {
@@ -365,7 +408,24 @@ class Clothing {
             { "B_Carryall_mcamo", "", 7500, "" },
             { "B_Carryall_oli", "", 7500, "" },
             { "B_Carryall_khk", "", 7500, "" },
-            { "B_Carryall_cbr", "", 7500, "" }
+            { "B_Carryall_cbr", "", 7500, "" },
+			{ "B_ViperLightHarness_khk_F", "", 7500, "" }, //Apex DLC
+	        { "B_ViperLightHarness_blk_F", "", 7500, "" }, //Apex DLC
+	        { "B_ViperLightHarness_hex_F", "", 7500, "" }, //Apex DLC
+	        { "B_ViperLightHarness_oli_F", "", 7500, "" }, //Apex DLC
+	        { "B_ViperLightHarness_ghex_F", "", 7500, "" }, //Apex DLC
+	        { "B_ViperHarness_oli_F", "", 7500, "" }, //Apex DLC
+	        { "B_ViperHarness_khk_F", "", 7500, "" }, //Apex DLC
+	        { "B_ViperHarness_ghex_F", "", 7500, "" }, //Apex DLC
+	        { "B_ViperHarness_blk_F", "", 7500, "" }, //Apex DLC
+	        { "B_FieldPack_ghex_F", "", 7500, "" }, //Apex DLC
+	        { "B_AssaultPack_tna_F", "", 7500, "" }, //Apex DLC
+	        { "B_Carryall_ghex_F", "", 7500, "" }, //Apex DLC
+	        { "B_Bergen_tna_F", "", 7500, "" }, //Apex DLC
+	        { "B_Bergen_hex_F", "", 7500, "" }, //Apex DLC
+	        { "B_Bergen_dgtl_F", "", 7500, "" }, //Apex DLC
+	        { "B_Bergen_mcamo_F", "", 7500, "" }, //Apex DLC
+	        { "B_ViperHarness_hex_F", "", 7500, "" } //Apex DLC
         };
     };
 
