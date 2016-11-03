@@ -266,14 +266,6 @@ class LifeCfgVehicles {
         price = 50000;
         textures[] = {};
     };
-	
-	// Apex DLC
-    class B_GEN_Offroad_01_gen_F {
-        vItemSpace = 100;
-        conditions = "";
-        price = 12500;
-        textures[] = {};
-    };
 
 	// Apex DLC
     class O_T_MRAP_02_ghex_F {
@@ -282,15 +274,7 @@ class LifeCfgVehicles {
         price = 40000;
         textures[] = {};
 	};
-	
-	// Apex DLC
-    class O_LSV_02_armed_F {
-        vItemSpace = 30;
-        conditions = "";
-        price = 175000;
-        textures[] = {};
-    };
-	
+
 	// Apex DLC
     class B_CTRG_Heli_Transport_01_tropic_F {
         vItemSpace = 100;
