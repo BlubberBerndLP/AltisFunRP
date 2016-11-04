@@ -2,7 +2,6 @@
 /*
     File: fn_actionKeyHandler.sqf
     Author: Bryan "Tonic" Boardwine
-
     Description:
     Master action key handler, handles requests for picking up various items and
     interacting with other players (Cops = Cop Menu for unrestrain,escort,stop escort, arrest (if near cop hq), etc).
