@@ -2,7 +2,6 @@
 /*
     File: fn_blastingCharge.sqf
     Author: Bryan "Tonic" Boardwine
-
     Description:
     Blasting charge is used for the federal reserve vault and nothing  more.. Yet.
 */
