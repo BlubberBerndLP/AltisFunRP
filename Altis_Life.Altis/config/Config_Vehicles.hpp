@@ -1,5 +1,7 @@
 class CarShops {
     /*
+    *    ARRAY FORMAT:
+    *        0: STRING (Classname)
     *    FORMAT:
     *        STRING (Conditions) - Must return boolean :
     *            String can contain any amount of conditions, aslong as the entire
@@ -23,7 +25,7 @@ class CarShops {
             { "C_SUV_01_F", "" },
             { "C_Hatchback_01_sport_F", "" },
             { "C_Van_01_transport_F", "" },
-			{ "C_Offroad_02_unarmed_F", "" } //Apex DLC
+            { "C_Offroad_02_unarmed_F", "" } //Apex DLC
         };
     };
 
@@ -60,10 +62,9 @@ class CarShops {
         side = "civ";
         conditions = "";
         vehicles[] = {
-            { "C_Heli_Light_01_civil_F", "" },
             { "B_Heli_Light_01_F", "" },
             { "O_Heli_Light_02_unarmed_F", "" },
-			{ "C_Plane_Civil_01_F", "" }, //Apex DLC
+            { "C_Plane_Civil_01_F", "" } //Apex DLC
         };
     };
 
@@ -74,8 +75,9 @@ class CarShops {
             { "C_Rubberboat", "" },
             { "C_Boat_Civil_01_F", "" },
             { "B_SDV_01_F", "" },
-			{ "C_Boat_Transport_02_F", "" }, //Apex DLC
+            { "C_Boat_Transport_02_F", "" }, //Apex DLC
             { "C_Scooter_Transport_01_F", "" } //Apex DLC
+
         };
     };
 
@@ -88,9 +90,8 @@ class CarShops {
             { "O_MRAP_02_F", "" },
             { "B_Heli_Light_01_stripped_F", "" },
             { "B_G_Offroad_01_armed_F", "" },
-			{ "I_Heli_light_03_unarmed_F", "" },
-			{ "I_MRAP_03_F", "" },
             { "O_T_LSV_02_unarmed_F", "" } //Apex DLC
+
         };
     };
 
@@ -121,13 +122,8 @@ class CarShops {
             { "C_Offroad_01_F", "" },
             { "C_SUV_01_F", "" },
             { "C_Hatchback_01_sport_F", "call life_coplevel >= 1" },
-            { "B_MRAP_01_F", "call life_coplevel  >= 2" },
-            { "C_Offroad_02_unarmed_F", "call life_coplevel  >= 2" },
-			{ "B_T_LSV_01_unarmed_F", "call life_coplevel  >= 3" },
-			{ "B_GEN_Offroad_01_gen_F", "call life_coplevel  >= 4" },
-			{ "B_MRAP_01_hmg_F", , "call life_coplevel  >= 6" },
-			{ "O_T_MRAP_02_ghex_F", "call life_coplevel  >= 7" },
-			{ "O_LSV_02_armed_F", "call life_coplevel  >= 7" }
+            { "B_MRAP_01_F", "call life_coplevel >= 2" },
+            { "B_MRAP_01_hmg_F", "call life_coplevel >= 3" }
         };
     };
 
@@ -136,10 +132,7 @@ class CarShops {
         conditions = "call life_coplevel >= 3";
         vehicles[] = {
             { "B_Heli_Light_01_F", "" },
-            { "B_Heli_Transport_01_F", "call life_coplevel >= 3" },
-			{ "B_CTRG_Heli_Transport_01_tropic_F", "call life_coplevel >= 5" },
-			{ "O_T_VTOL_02_vehicle_F", "call life_coplevel >= 7" },
-			{ "B_T_VTOL_01_infantry_blue_F", "call life_coplevel >= 7" }
+            { "B_Heli_Transport_01_F", "call life_coplevel >= 4" }
         };
     };
 
@@ -149,7 +142,7 @@ class CarShops {
         vehicles[] = {
             { "B_Boat_Transport_01_F", "" },
             { "C_Boat_Civil_01_police_F", "" },
-            { "B_Boat_Armed_01_minigun_F", "call life_coplevel >= 5" },
+            { "B_Boat_Armed_01_minigun_F", "call life_coplevel >= 3" },
             { "B_SDV_01_F", "" }
         };
     };
@@ -189,116 +182,48 @@ class LifeCfgVehicles {
         price = -1;
         textures[] = {};
     };
-	
-	// Apex DLC 
-    class C_Boat_Transport_02_F {
-        vItemSpace = 45;
-        conditions = "license_civ_boat";
-        price = 10000;
-        textures[] = { };
-    };
-	
-	// Apex DLC
-    class B_GEN_Offroad_01_gen_F {
-        vItemSpace = 100;
-        conditions = "";
-        price = 12500;
-        textures[] = {};
-    };
-
-	// Apex DLC
-    class O_LSV_02_armed_F {
-        vItemSpace = 100;
-        conditions = "";
-        price = 75000;
-        textures[] = {};
-    };
-	
-	// Apex DLC
-    class O_T_VTOL_02_vehicle_F {
-        vItemSpace = 200;
-        conditions = "license_cop_cAir";
-        price = 500000;
-        textures[] = {};
-    };
-	
-	// Apex DLC
-    class B_T_VTOL_01_infantry_blue_F {
-        vItemSpace = 500;
-        conditions = "license_cop_cAir";
-        price = 200000;
-        textures[] = {};
-    };
 
     // Apex DLC
-    class C_Plane_Civil_01_F {
-        vItemSpace = 75;
-        conditions = "license_civ_pilot";
-        price = 550000;
-        textures[] = {};
-    };
-
-    class I_Heli_light_03_unarmed_F {
+    class C_Boat_Transport_02_F {
         vItemSpace = 100;
-        conditions = "license_civ_rebel";
-        price = 1000000;
+        conditions = "";
+        price = 10000;
         textures[] = {};
     };
 
     // Apex DLC
     class C_Offroad_02_unarmed_F {
         vItemSpace = 65;
-        conditions = "license_civ_driver";
+        conditions = "";
         price = 12500;
-        textures[] = {};
-    };
-	
-	class I_MRAP_03_F {
-        vItemSpace = 100;
-        conditions = "license_civ_rebel";
-        price = 100000;
-        textures[] = {};
-    };
-	
-	class B_T_LSV_01_unarmed_F {
-        vItemSpace = 50;
-        conditions = "";
-        price = 50000;
-        textures[] = {};
-    };
-
-	// Apex DLC
-    class O_T_MRAP_02_ghex_F {
-        vItemSpace = 45;
-        conditions = "";
-        price = 40000;
-        textures[] = {};
-	};
-
-	// Apex DLC
-    class B_CTRG_Heli_Transport_01_tropic_F {
-        vItemSpace = 100;
-        conditions = "license_cop_cAir";
-        price = 75000;
         textures[] = {};
     };
 
     // Apex DLC
-    class O_T_LSV_02_unarmed_F {
-        vItemSpace = 100;
-        conditions = "license_civ_rebel";
-        price = 100000;
+    class C_Plane_Civil_01_F {
+        vItemSpace = 75;
+        conditions = "";
+        price = 150000;
         textures[] = {};
     };
 
-    // Apex 
+    // Apex DLC
     class C_Scooter_Transport_01_F {
         vItemSpace = 30;
         conditions = "";
         price = 2500;
         textures[] = {};
     };
-	
+
+    // Apex DLC
+    class O_T_LSV_02_unarmed_F {
+        vItemSpace = 100;
+        conditions = "";
+        price = 100000;
+        textures[] = {};
+    };
+
+
     class I_Truck_02_medical_F {
         vItemSpace = 150;
         conditions = "";
@@ -398,7 +323,7 @@ class LifeCfgVehicles {
 
     class B_G_Offroad_01_F {
         vItemSpace = 65;
-        conditions = "license_civ_rebel";
+        conditions = "";
         price = 12500;
         textures[] = { };
     };
@@ -440,7 +365,7 @@ class LifeCfgVehicles {
 
     class O_MRAP_02_F {
         vItemSpace = 60;
-        conditions = "license_civ_rebel";
+        conditions = "license_civ_driver";
         price = 150000;
         textures[] = { };
     };
@@ -696,7 +621,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 
      class B_Heli_Light_01_stripped_F {
         vItemSpace = 90;
-        conditions = "license_civ_rebel";
+        conditions = "";
         price = 275000;
         textures[] = {
             { "Rebel Digital", "reb", {
@@ -707,7 +632,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 
     class B_Heli_Light_01_F {
         vItemSpace = 90;
-        conditions = "license_civ_pilot || {license_cop_cAir} || {license_med_mAir}";
+        conditions = "license_civ_pilot || {license_cop_cg} || {license_civ_mAir}";
         price = 245000;
         textures[] = {
             { "Police", "cop", {
@@ -765,7 +690,7 @@ will modify the virtual space and the price of the vehicle, but other informatio
 
     class O_Heli_Light_02_unarmed_F {
         vItemSpace = 210;
-        conditions = "license_civ_pilot || {license_med_mAir}";
+        conditions = "license_civ_pilot || {license_civ_mAir}";
         price = 750000;
         textures[] = {
             { "Black", "cop", {
