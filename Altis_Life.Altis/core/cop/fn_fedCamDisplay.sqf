@@ -2,7 +2,6 @@
 /*
     File: fn_fedCamDisplay.sqf
     Author: Bryan "Tonic" Boardwine
-
     Description:
     Turns on and displays a security cam like feed via PiP to the laptop display.
 */

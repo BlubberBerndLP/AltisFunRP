@@ -2,7 +2,6 @@
 /*
     File: fn_captureHideout.sqf
     Author: Bryan "Tonic" Boardwine
-
     Description:
     Blah blah.
 */
