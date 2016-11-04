@@ -2,7 +2,6 @@
 /*
     File: fn_weaponShopBuySell.sqf
     Author: Bryan "Tonic" Boardwine
-
     Description:
     Master handling of the weapon shop for buying / selling an item.
 */

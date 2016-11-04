@@ -1,7 +1,6 @@
 /*
     File: fn_terrainSort.sqf (TO BE CHANGED)
     Author: BoGuu
-
     Description:
     Gah.
 */
