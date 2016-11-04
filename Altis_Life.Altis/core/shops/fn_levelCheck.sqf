@@ -1,7 +1,6 @@
 /*
     File: fn_levelCheck.sqf
     Author: BoGuu
-
     Description:
     xx
 */
