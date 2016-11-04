@@ -2,12 +2,13 @@
 /*
     File: fn_vehicleShopBuy.sqf
     Author: Bryan "Tonic" Boardwine
-
     Description:
     Does something with vehicle purchasing.
 */
 
 params [["_mode",true,[true]]];
+
+private _exit = false;
 
 if ((lbCurSel 2302) isEqualTo -1) exitWith {hint localize "STR_Shop_Veh_DidntPick";closeDialog 0;};
 
@@ -51,9 +52,11 @@ if (_mode) then {
 
 private _conditions = M_CONFIG(getText,"LifeCfgVehicles",_className,"conditions");
 
-if !([_conditions] call life_fnc_levelCheck) exitWith {hint localize "STR_Shop_Veh_NoLicence";};
+if !([_conditions] call life_fnc_levelCheck) exitWith {hint "Can't buy yada yada yada non creative string";};
 
 private _colorIndex = lbValue[2304,(lbCurSel 2304)];
+
+if (_exit) exitWith {hint parseText format [(localize "STR_Shop_Veh_NoLicense")+ "<br/><br/>%1",_licensesName];closeDialog 0;};
 
 if (_purchasePrice < 0) exitWith {closeDialog 0;}; //Bad price entry
 if (CASH < _purchasePrice) exitWith {hint format [localize "STR_Shop_Veh_NotEnough",[_purchasePrice - CASH] call life_fnc_numberText];closeDialog 0;};
